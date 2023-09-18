@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        td {
+            vertical-align: top;
+            /* Align table cells at the top */
+        }
+    </style>
+</head>
+
+<body>
+    <table width="100%">
+        <tbody>
+            <tr>
+                <td>
+                    <ul>
+                        <li><a href="../profile/index.html">Account</a></li>
+                        <li><a href="../dashboard.html">Dashboard</a></li>
+                        <li><a href="../home.html">Courses</a></li>
+                        <li><a href="#">Calendar</a></li>
+                        <li><a href="#">Inbox</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Studio</a></li>
+                        <li><a href="#">Commons</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><a href="../home.html">Home</a></li>
+                        <li><a href="#">Modules</a></li>
+                        <li><a href="#">Piazza</a></li>
+                        <li><a href="#">Zoom Meetings</a></li>
+                        <li><a href="index.html">Assignments</a></li>
+                        <li><a href="#">Quizzes</a></li>
+                        <li><a href="../grades.html">Grades</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Panopto Video</a></li>
+                        <li><a href="#">Discussions</a></li>
+                        <li><a href="#">Announcements</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Files</a></li>
+                        <li><a href="#">Rubrics</a></li>
+                        <li><a href="#">Outcomes</a></li>
+                        <li><a href="#">Collaborations</a></li>
+                        <li><a href="#">Syllabus</a></li>
+                        <li><a href="../settingstab/index.html">Settings</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <form>
+                        <select id="select-one-genre">
+                            <option value="COMEDY">Comedy</option>
+                            <option value="DRAMA">Drama</option>
+                            <option selected value="SCIFI">
+                                SpeedGrader</option>
+                            <option value="FANTASY">Fantasy</option>
+                        </select>
+                    </form>
+                    <h2>Assignment Name</h2>
+                    <form>
+                        <input type="text" id="text-fields-first-name" placeholder="A1 - ENV + HTML" /><br />
+                        <br />
+                        <form id="textarea">
+                            <textarea cols="30" rows="5">This is the assignment description/</textarea>
+                        </form>
+
+                        <label>Points</label><br />
+                        <input type="text" id="text-fields-first-name" placeholder="100" /><br />
+                        <br />
+                        <label>Assignment Group</label><br />
+                        <form>
+                            <select id="select-one-genre">
+                                <option value="COMEDY">Comedy</option>
+                                <option value="DRAMA">Drama</option>
+                                <option selected value="SCIFI">
+                                    ASSIGNMENTS</option>
+                                <option value="FANTASY">Fantasy</option>
+                            </select>
+                        </form>
+                        <br />
+                        <label>Display Grade as</label><br />
+
+
+                        <form>
+                            <select id="select-one-genre">
+                                <option value="COMEDY">Comedy</option>
+                                <option value="DRAMA">Drama</option>
+                                <option selected value="SCIFI">
+                                    Percentage</option>
+                                <option value="FANTASY">Fantasy</option>
+                            </select>
+                        </form>
+                        <br />
+                        <label>Submission Type</label><br />
+                        <form>
+                            <select id="select-one-genre">
+                                <option value="COMEDY">Comedy</option>
+                                <option value="DRAMA">Drama</option>
+                                <option selected value="SCIFI">
+                                    Online</option>
+                                <option value="FANTASY">Fantasy</option>
+                            </select>
+                        </form>
+                        <br />
+                        <label>Online Entry options</label><br />
+                        <input type="checkbox" value="Text Entry" name="check-entry" id="chkbox-text" />
+                        <label for="chkbox-text">Text Entry</label> <br />
+                        <input type="checkbox" value="Website URL" name="check-entry" id="chkbox-web" />
+                        <label for="chkbox-web">Website URL</label> <br />
+                        <input type="checkbox" value="Media Recordings" name="check-entry" id="chkbox-media" />
+                        <label for="chkbox-media">Media Recordings</label> <br />
+                        <input type="checkbox" value="Student Annotation" name="check-entry" id="chkbox-annotation" />
+                        <label for="chkbox-annotation">Student Annotation</label> <br />
+                        <input type="checkbox" value="File Uploads" name="check-entry" id="chkbox-uploads" />
+                        <label for="chkbox-uploads">File Uploads</label>
+                    </form>
+                    <br />
+                    <br />
+                    <label>Submission Attempts</label><br />
+                    <form>
+                        <select id="select-one-genre">
+                            <option value="COMEDY">Comedy</option>
+                            <option value="DRAMA">Drama</option>
+                            <option selected value="SCIFI">
+                                Unlimited</option>
+                            <option value="FANTASY">Fantasy</option>
+                        </select>
+                    </form>
+                    <br />
+                    <label>Plagiarism Review</label><br />
+                    <form>
+                        <select id="select-one-genre">
+                            <option value="COMEDY">Comedy</option>
+                            <option value="DRAMA">Drama</option>
+                            <option selected value="SCIFI">
+                                None</option>
+                            <option value="FANTASY">Fantasy</option>
+                        </select>
+                    </form>
+                    <br />
+                    <label>Group Assignment</label><br />
+                    <input type="checkbox" value="Text Entry" name="check-entry" id="chkbox-text" />
+                    <label for="chkbox-text">This is a group assignment</label> <br />
+                    <br />
+                    <label>Peer Reviews</label><br />
+                    <input type="checkbox" value="Text Entry" name="check-entry" id="chkbox-text" />
+                    <label for="chkbox-text">Require Peer Reviews</label> <br />
+                    <br />
+                    <label>Assign</label><br />
+                    <label>Assign to</label><br />
+                    <input type="text" id="text-fields-first-name" placeholder="Everyone" /><br />
+                    <br />
+                    <label for="text-fields-due">
+                        Due
+                    </label>
+                    <input type="date" id="text-fields-due" value="2021-01-01" /><br />
+                    <br />
+                    <label for="text-fields-from">
+                        Available from
+                    </label>
+                    <input type="date" id="text-fields-from" value="2021-01-01" /><br />
+                    <br />
+                    <label for="text-fields-until">
+                        Until
+                    </label>
+                    <input type="date" id="text-fields-until" value="2021-01-01" /><br />
+                    <br />
+                    <button type="button">Cancel</button>
+
+                    <button type="button">Save</button>
+                </td>
+                <td>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
