@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        td {
+            vertical-align: top;
+            /* Align table cells at the top */
+        }
+    </style>
+</head>
+
+<body>
+    <table width="100%">
+        <tbody>
+            <tr>
+                <td>
+                    <ul>
+                        <li><a href="../profile/index.html">Account</a></li>
+                        <li><a href="../dashboard.html">Dashboard</a></li>
+                        <li><a href="../home.html">Courses</a></li>
+                        <li><a href="#">Calendar</a></li>
+                        <li><a href="#">Inbox</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Studio</a></li>
+                        <li><a href="#">Commons</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><a href="../home.html">Home</a></li>
+                        <li><a href="#">Modules</a></li>
+                        <li><a href="#">Piazza</a></li>
+                        <li><a href="#">Zoom Meetings</a></li>
+                        <li><a href="../assignments/index.html">Assignments</a></li>
+                        <li><a href="#">Quizzes</a></li>
+                        <li><a href="../grades.html">Grades</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Panopto Video</a></li>
+                        <li><a href="#">Discussions</a></li>
+                        <li><a href="#">Announcements</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Files</a></li>
+                        <li><a href="#">Rubrics</a></li>
+                        <li><a href="#">Outcomes</a></li>
+                        <li><a href="#">Collaborations</a></li>
+                        <li><a href="#">Syllabus</a></li>
+                        <li><a href="index.html">Settings</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <form>
+                        <button>
+                            <a type="button" href="index.html">Course Details</a>
+                        </button>
+                        <button>
+                            <a type="button" href="#">Sections</a>
+                        </button>
+                        <button>
+                            <a type="button" href="navigation.html">Navigation</a>
+                        </button>
+                        <button>
+                            <a type="button" href="#">Apps</a>
+                        </button>
+                        <button>
+                            <a type="button" href="#">Feature Options</a>
+                        </button>
+                        <button>
+                            <a type="button" href="#">Integration</a>
+                        </button>
+                    </form>
+                    <h1>Course Details</h1>
+                    <table width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h3>Image:</h3>
+                                </td>
+                                <td>
+                                    <input type="file" />
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>Name:</h3>
+                                </td>
+                                <td>
+                                    <p>CS5510 12342 Web Development SEC01 Fall 2023[BOS-1-TR]</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>Course Code:</h3>
+                                </td>
+                                <td>
+                                    <p>CS5510.12342.1254536</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>Blueprint Course:</h3>
+                                </td>
+                                <td>
+                                    <p>No</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>Course Template:</h3>
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="COURSE" name="check-coursetemplate"
+                                        id="chkbox-coursetemplate" />
+                                    <label for="chkbox-coursetemplate">Enable course as a Course Template</label> <br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>Time Zone:</h3>
+                                </td>
+                                <td>
+                                    <select id="select-one-genre">
+                                        <option value="COMEDY">Comedy</option>
+                                        <option value="DRAMA">Drama</option>
+                                        <option selected value="SCIFI">
+                                            Eastern Time (US & Canada)(-05:00/-04:00)</option>
+                                        <option value="FANTASY">Fantasy</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>SIS ID:</h3>
+                                </td>
+                                <td>
+                                    <p>CS5510.12342.1254536</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>Subaccount:</h3>
+                                </td>
+                                <td><a href="#">CS grad</a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>Term:</h3>
+                                </td>
+                                <td>
+                                    <p>20210_1 Fall 2023[BOS-1-TR]</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>Participation:</h3>
+                                </td>
+                                <td>
+                                    <form>
+                                        <select id="select-one-genre">
+                                            <option value="COMEDY">Comedy</option>
+                                            <option value="DRAMA">Drama</option>
+                                            <option selected value="SCIFI">
+                                                Term</option>
+                                            <option value="FANTASY">Fantasy</option>
+                                        </select><br />
+                                        <p>Course participation is limited to <b>term</b> start and end dates.</b></p>
+                                        <h3>Start</h3>
+                                        <input type="date" id="text-fields-start" /><br />
+                                        <h3>End</h3>
+                                        <input type="date" id="text-fields-end" /><br />
+                                        <input type="checkbox" value="COURSE" name="check-coursestart"
+                                            id="chkbox-coursestart" />
+                                        <label for="chkbox-coursestart">Restrict students from viewing course before
+                                            term start date</label> <br />
+                                        <input type="checkbox" value="COURSE" name="check-courseend"
+                                            id="chkbox-courseend" />
+                                        <label for="chkbox-courseend">Restrict students from viewing course after
+                                            term end date</label> <br />
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>Default due time:</h3>
+                                </td>
+                                <td>
+                                    <select id="select-one-genre">
+                                        <option value="COMEDY">Comedy</option>
+                                        <option value="DRAMA">Drama</option>
+                                        <option selected value="SCIFI">
+                                            Account default (11:59 pm)</option>
+                                        <option value="FANTASY">Fantasy</option>
+                                    </select><br />
+                                    <p>This influences the user interface for setting due dates. It does not change the
+                                        time due for any existing assignments.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>Language:</h3>
+                                </td>
+                                <td>
+                                    <select id="select-one-genre">
+                                        <option value="COMEDY">Comedy</option>
+                                        <option value="DRAMA">Drama</option>
+                                        <option selected value="SCIFI">
+                                            Not set (user-configurable, defaults to English)</option>
+                                        <option value="FANTASY">Fantasy</option>
+                                    </select><br />
+                                    <p>This will override any user/system language preferances. This is only recommended
+                                        for foreign language courses.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>File Storage:</h3>
+                                </td>
+                                <td>
+                                    <p>100000 megabytes</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>Large Course:</h3>
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="COURSE" name="check-coursetemplate"
+                                        id="chkbox-coursetemplate" />
+                                    <label for="chkbox-coursetemplate">Launch SpeedGrader Filtered by Student
+                                        Group</label> <br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>Grading Scheme:</h3>
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="COURSE" name="check-coursetemplate"
+                                        id="chkbox-coursetemplate" />
+                                    <label for="chkbox-coursetemplate">Enable course grading scheme</label> <br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>License:</h3>
+                                </td>
+                                <td>
+                                    <select id="select-one-genre">
+                                        <option value="COMEDY">Comedy</option>
+                                        <option value="DRAMA">Drama</option>
+                                        <option selected value="SCIFI">
+                                            Private (Copyrighted)</option>
+                                        <option value="FANTASY">Fantasy</option>
+                                    </select><br />
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>Description:</h3>
+                                </td>
+                                <td>
+                                    <form id="textarea">
+                                        <textarea cols="30" rows="10"></textarea>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                </td>
+                                <td>
+                                    <a href="#">more options</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                </td>
+                                <td>
+                                    <button type="button">Update Course Details</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
