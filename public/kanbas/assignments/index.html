@@ -1,139 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
 
-<head>
-    <meta charset="UTF-8">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
     <title>Title</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../js/script.js"></script>
     <style>
-        td {
-            vertical-align: top;
-            /* Align table cells at the top */
-        }
+      td {
+        vertical-align: top;
+        /* Align table cells at the top */
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <table width="100%">
-        <tbody>
-            <tr>
-                <td>
-                    <ul>
-                        <li><a href="../profile/index.html">Account</a></li>
-                        <li><a href="../dashboard.html">Dashboard</a></li>
-                        <li><a href="../home.html">Courses</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Commons</a></li>
-                        <li><a href="#">Help</a></li>
+      <tbody>
+        <tr class="main-sidebar">
+          <!-- side bar -->
+          <td class="main-sidebar">
+            <ul class="sidebar">
+              <li>
+                <img src="../../images/logo.png" width="65px" height="65px">
+              </li>
+              <li>
+                <a href="../profile/index.html">
+                  <i class="fa fa-user-circle" id="account-icon"></i>Account</a
+                >
+              </li>
+              <li>
+                <a href="../dashboard.html">
+                  <i class="fa fa-tachometer-alt"></i>Dashboard</a
+                >
+              </li>
+              <li>
+                <a href="index.html">
+                  <i class="fa fa-book" aria-hidden="true"></i>Courses</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-calendar" aria-hidden="true"></i>Calendar</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-inbox" aria-hidden="true"></i>Inbox</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-clock" aria-hidden="true"></i>History</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-video" aria-hidden="true"></i>Studio</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-creative-commons"></i>Commons</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-question-circle" aria-hidden="true"></i
+                  >Help</a
+                >
+              </li>
+            </ul>
+          </td>
+        
+         <td>
+          <div style="font-size: 25px;padding-left: 20px;margin-top: 10px;">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <p>
+                  <i class="fa fa-bars" style="font-size: 20px; color: rgb(230, 35, 35)"></i>
+                </p>
+                <li class="breadcrumb-item" style="color:rgb(230, 35, 35); margin-left: 20px;">CS5610.2304.2304</li>
+                <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+              </ol>
+            </nav>
+          </div>
+          <hr/>
+          <div>
+            <table width="100%">
+              <tbody>
+                <tr>
+                   <!-- left panel -->
+                  <td class="main-left-panel">
+                    <ul class="left-panel">
+                      <li><a href="../home.html">Home</a></li>
+                      <li><a href="#">Modules</a></li>
+                      <li><a href="#">Piazza</a></li>
+                      <li><a href="#">Zoom Meetings</a></li>
+                      <li><a href="index.html">Assignments</a></li>
+                      <li><a href="#">Quizzes</a></li>
+                      <li><a href="../grades.html">Grades</a></li>
+                      <li><a href="#">People</a></li>
+                      <li><a href="#">Panopto Video</a></li>
+                      <li><a href="#">Discussions</a></li>
+                      <li><a href="#">Announcements</a></li>
+                      <li><a href="#">Pages</a></li>
+                      <li><a href="#">Files</a></li>
+                      <li><a href="#">Rubrics</a></li>
+                      <li><a href="#">Outcomes</a></li>
+                      <li><a href="#">Collaborations</a></li>
+                      <li><a href="#">Syllabus</a></li>
+                      <li><a href="../settingstab/index.html">Settings</a></li>
                     </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li><a href="../home.html">Home</a></li>
-                        <li><a href="#">Modules</a></li>
-                        <li><a href="#">Piazza</a></li>
-                        <li><a href="#">Zoom Meetings</a></li>
-                        <li><a href="index.html">Assignments</a></li>
-                        <li><a href="#">Quizzes</a></li>
-                        <li><a href="../grades.html">Grades</a></li>
-                        <li><a href="#">People</a></li>
-                        <li><a href="#">Panopto Video</a></li>
-                        <li><a href="#">Discussions</a></li>
-                        <li><a href="#">Announcements</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Files</a></li>
-                        <li><a href="#">Rubrics</a></li>
-                        <li><a href="#">Outcomes</a></li>
-                        <li><a href="#">Collaborations</a></li>
-                        <li><a href="#">Syllabus</a></li>
-                        <li><a href="../settingstab/index.html">Settings</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <form>
-                        <input type="text" id="text-fields-first-name" placeholder="Search for Assignments" />
-                        <button type="button">Group</button>
-                        <button type="button">Assignment</button>
-                        <select id="select-one-genre">
-                            <option value="COMEDY">Comedy</option>
-                            <option value="DRAMA">Drama</option>
-                            <option selected value="SCIFI">
-                                Edit Assignment Dates</option>
-                            <option value="FANTASY">Fantasy</option>
-                        </select>
-                    </form>
-                    <h2>ASSIGNMENTS 40% of Total</h2><span>
-                        <form>
-                            <select id="select-one-genre">
-                                <option value="COMEDY">Comedy</option>
-                                <option value="DRAMA">Drama</option>
-                                <option selected value="SCIFI">
-                                    Edit</option>
-                                <option value="FANTASY">Fantasy</option>
-                            </select>
-                        </form>
-                    </span>
-                    <ul>
-                        <li><a href="edit.html">A1 ENV + HTML Multiple Modules</a> | Not available yet</li>
-                        <li><a href="edit.html">A2 CSS + BOOTSTRAP Multiple Modules</a> | Not available yet</li>
-                        <li><a href="edit.html">A3 JS + REACT Multiple Modules</a> | Not available yet</li>
-                        <li><a href="edit.html">A4 STATE + REDUX Multiple Modules</a> | Not available yet</li>
-                        <li><a href="edit.html">A5 NODE + SESSION Multiple Modules</a> | Not available yet</li>
-                        <li><a href="edit.html">A6 MONGO + MONGOOSE Multiple Modules</a> | Not available yet</li>
-                    </ul>
-                    <h2>QUIZZES 10% of Total</h2>
-                    <form>
-                        <select id="select-one-genre">
-                            <option value="COMEDY">Comedy</option>
-                            <option value="DRAMA">Drama</option>
-                            <option selected value="SCIFI">
-                                Edit</option>
-                            <option value="FANTASY">Fantasy</option>
-                        </select>
-                    </form>
-                    <ul>
-                        <li><a href="#">Q1 HTML Multiple Modules</a> | Not available yet</li>
-                        <li><a href="#">Q2 CSS Multiple Modules</a> | Not available yet</li>
-                        <li><a href="#">Q3 JS, ES6 Multiple Modules</a> | Not available yet</li>
-                        <li><a href="#">Q4 NODE Multiple Modules</a> | Not available yet</li>
-                        <li><a href="#">Q5 MONGO Multiple Modules</a> | Not available yet</li>
-                    </ul>
-                    <h2>EXAMS 20% of Total</h2>
-                    <form>
-                        <select id="select-one-genre">
-                            <option value="COMEDY">Comedy</option>
-                            <option value="DRAMA">Drama</option>
-                            <option selected value="SCIFI">
-                                Edit</option>
-                            <option value="FANTASY">Fantasy</option>
-                        </select>
-                    </form>
-                    <ul>
-                        <li><a href="#">Midterm Multiple Modules</a> | Not available yet</li>
-                        <li><a href="#">Final Multiple Modules</a> | Not available yet</li>
-                    </ul>
-                    <h2>PROJECT 30% of Total</h2>
-                    <form>
-                        <select id="select-one-genre">
-                            <option value="COMEDY">Comedy</option>
-                            <option value="DRAMA">Drama</option>
-                            <option selected value="SCIFI">
-                                Edit</option>
-                            <option value="FANTASY">Fantasy</option>
-                        </select>
-                    </form>
-                    <ul>
-                        <li><a href="#">Project Multiple Modules</a> | Not available yet</li>
-                    </ul>
-                </td>
-                <td>
+                  </td>
+                 
+                  <div id="assignment-indexjs">
+                  <td>
+                    <!-- ASS HEADER  -->
+                    <div class="float-end">
+                      <div class="assignment-header">
+                        <div class="ass-main-head">
+                          <div>
+                            <input type="text" class="form-control" placeholder="Search For Assignments" style="padding:10px">
+                          </div>
+                          <div class="">
+                            <button type="button" class="btn btn-secondary">
+                              <i class="fa fa-plus" aria-hidden="true"></i> Group
+                            </button>
+                            <button type="button" class="btn btn-danger">
+                              <i class="fa fa-plus" aria-hidden="true"></i> Assignment
+                            </button>
+                            <button type="button" class="btn btn-secondary">
+                             <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
 
-                </td>
-            </tr>
-        </tbody>
+                            </button>
+
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <hr id="assignment-hr" />
+                    <!-- ASS COURSE BODY   -->
+                    <div>
+                      <div class="assignment-main">
+                        <!-- ASSIGN 1  -->
+                        <div>
+                          <div class="assignment-head">
+                            <p><i class="fa fa-list-ul" aria-hidden="true" style="margin-right: 6px; font-size: 12px;"></i><i class="fa fa-caret-down" aria-hidden="true" style="margin-right: 6px; font-size: 12px;"></i> Assignments</p>
+                            <div class="d-flex align-items-center justify-content-center gap-4">
+                              <p class="assignment-head-circle">
+                               40% of Total
+                              </p>
+                              <p><i class="fa fa-plus" aria-hidden="true"></i></p>
+                              <p>
+
+                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                              </p>
+                            </div>
+                          </div>
+                         
+                          <div class="assignment-content">
+                              <!-- CONSTENT HEAD 1 -->
+                              <div class="assign-content-body">
+                                <div  class="assign-content-body-part-1">
+                                  <div>
+                                    <i class="fa fa-list-ul" aria-hidden="true" style="margin-right: 6px; font-size: 16px;"></i>
+                                    <i class="fa fa-file" aria-hidden="true" style="margin-right: 6px; font-size: 16px;color:green"></i></div>
+                                  <div class="assign-content-part">
+                                    <h5 onclick="showSection('assignment-editjs')"> 
+                                      <a href="./edit.html" alt="" style="text-decoration: none;color:black">A2 SETUP</a>
+                                      </h5>
+                                    <p style="margin:0px">Week 0 setup</p>
+                                    <p style="margin:0px">Due september</p>
+                                  </div>
+                                </div>
+                                <div class="assign-content-body-part-2">
+                                  <p class="d-flex gap-3">
+                                    <i class="fa fa-check-circle" aria-hidden="true" style="color: green; font-size: 16px"></i>
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                  </p>
+                                </div>
+                              </div>
+                              <!-- CONSTENT HEAD 2 -->
+                              <div class="assign-content-body">
+                                <div  class="assign-content-body-part-1">
+                                  <div>
+                                    <i class="fa fa-list-ul" aria-hidden="true" style="margin-right: 6px; font-size: 16px;"></i>
+                                    <i class="fa fa-file" aria-hidden="true" style="margin-right: 6px; font-size: 16px;color:green"></i></div>
+                                  <div class="assign-content-part">
+                                    <h5 onclick="showSection('assignment-editjs')">
+                                      <a href="./edit.html" alt="" style="text-decoration: none;color:black">A2 HTML</a>
+                                    </h5>
+
+                                    <p style="margin:0px">Week 0 setup</p>
+                                    <p style="margin:0px">Due september</p>
+                                  </div>
+                                </div>
+                                <div class="assign-content-body-part-2">
+                                  <p class="d-flex gap-3">
+                                    <i class="fa fa-check-circle" aria-hidden="true" style="color: green; font-size: 16px"></i>
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                  </p>
+                                </div>
+                              </div>
+                              <!-- CONSTENT HEAD 3  -->
+                              <div class="assign-content-body">
+                                <div  class="assign-content-body-part-1">
+                                  <div>
+                                    <i class="fa fa-list-ul" aria-hidden="true" style="margin-right: 6px; font-size: 16px;"></i>
+                                    <i class="fa fa-file" aria-hidden="true" style="margin-right: 6px; font-size: 16px;color:green"></i></div>
+                                  <div class="assign-content-part">
+                                    <h5 onclick="showSection('assignment-editjs')"> 
+                                      <a href="./edit.html" alt="" style="text-decoration: none;color:black">A2 CSS</a>
+                                    </h5>
+                                    <p style="margin:0px">Week 0 setup</p>
+                                    <p style="margin:0px">Due september</p>
+                                  </div>
+                                </div>
+                                <div class="assign-content-body-part-2">
+                                  <p class="d-flex gap-3">
+                                    <i class="fa fa-check-circle" aria-hidden="true" style="color: green; font-size: 16px"></i>
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                  </p>
+                                </div>
+                              </div>
+                               <!-- CONSTENT HEAD 4  -->
+                               <div class="assign-content-body">
+                                <div  class="assign-content-body-part-1">
+                                  <div>
+                                    <i class="fa fa-list-ul" aria-hidden="true" style="margin-right: 6px; font-size: 16px;"></i>
+                                    <i class="fa fa-file" aria-hidden="true" style="margin-right: 6px; font-size: 16px;color:green"></i></div>
+                                  <div class="assign-content-part">
+                                    <h5 onclick="showSection('assignment-editjs')"> 
+                                       <a href="./edit.html" alt="" style="text-decoration: none;color:black">A2 CSS</a>
+                                    </h5>
+                                    <p style="margin:0px">Week 0 setup</p>
+                                    <p style="margin:0px">Due september</p>
+                                  </div>
+                                </div>
+                                <div class="assign-content-body-part-2">
+                                  <p class="d-flex gap-3">
+                                    <i class="fa fa-check-circle" aria-hidden="true" style="color: green; font-size: 16px"></i>
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                  </p>
+                                </div>
+                              </div>
+                               <!-- CONSTENT HEAD 5  -->
+                               <div class="assign-content-body">
+                                <div  class="assign-content-body-part-1">
+                                  <div>
+                                    <i class="fa fa-list-ul" aria-hidden="true" style="margin-right: 6px; font-size: 16px;"></i>
+                                    <i class="fa fa-file" aria-hidden="true" style="margin-right: 6px; font-size: 16px;color:green"></i></div>
+                                  <div class="assign-content-part">
+                                    <h5 onclick="showSection('assignment-editjs')"> 
+                                       <a href="./edit.html" alt="" style="text-decoration: none;color:black">A2 CSS</a>
+                                    </h5>
+                                    <p style="margin:0px">Week 0 setup</p>
+                                    <p style="margin:0px">Due september</p>
+                                  </div>
+                                </div>
+                                <div class="assign-content-body-part-2">
+                                  <p class="d-flex gap-3">
+                                    <i class="fa fa-check-circle" aria-hidden="true" style="color: green; font-size: 16px"></i>
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>  
+                      </div>  
+                      </div>
+                    </div>
+                  </div>
+
+                  
+          
+          
+          
+                  </div>
+              </td>
+         <td style="width:50px"></td>
+        </tr>
+      </tbody>
     </table>
-</body>
-
+  </body>
 </html>
