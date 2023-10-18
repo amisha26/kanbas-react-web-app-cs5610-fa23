@@ -2,128 +2,437 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        td {
-            vertical-align: top;
-            /* Align table cells at the top */
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="../../css/main.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="../../js/script.js"></script>
+  <title>Title</title>
+  <style>
+    td {
+      vertical-align: top;
+      /* Align table cells at the top */
+    }
+
+    .btn-border {
+      border-top: 1px solid grey;
+      border-left: 1px solid grey;
+      border-right: 1px solid grey;
+      border-bottom: none;
+      background-color: transparent;
+      padding: 6px 8px 6px 8px;
+    }
+
+    .btn-no-border {
+      border: none;
+      background-color: transparent;
+    }
+  </style>
 </head>
 
 <body>
-    <table width="100%">
-        <tbody>
-            <tr>
-                <td>
-                    <ul>
-                        <li><a href="../profile/index.html">Account</a></li>
-                        <li><a href="../dashboard.html">Dashboard</a></li>
-                        <li><a href="../home.html">Courses</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Commons</a></li>
-                        <li><a href="#">Help</a></li>
+  <table width="100%">
+    <tbody>
+      <tr class="main-sidebar">
+        <!-- side bar -->
+        <td class="main-sidebar">
+          <ul class="sidebar">
+            <li>
+              <img src="../../images/logo.png" width="65px" height="65px" />
+            </li>
+            <li data-page="profile/index.html">
+              <a href="../profile/index.html">
+                <i class="fa fa-user-circle" id="account-icon"></i>Account</a>
+            </li>
+            <li data-page="dashboard.html">
+              <a href="../dashboard.html">
+                <i class="fa fa-tachometer-alt"></i>Dashboard</a>
+            </li>
+            <li data-page="navigation.html">
+              <a href="navigation.html">
+                <i class="fa fa-book" aria-hidden="true"></i>Courses</a>
+            </li>
+            <li data-page="profile/index.html">
+              <a href="#">
+                <i class="fa fa-calendar" aria-hidden="true"></i>Calendar</a>
+            </li>
+            <li data-page="#">
+              <a href="#">
+                <i class="fa fa-inbox" aria-hidden="true"></i>Inbox</a>
+            </li>
+            <li data-page="#">
+              <a href="#"><i class="fa fa-clock" aria-hidden="true"></i>History</a>
+            </li>
+            <li data-page="#">
+              <a href="#"><i class="fa fa-video" aria-hidden="true"></i>Studio</a>
+            </li>
+            <li data-page="#">
+              <a href="#"><i class="fab fa-creative-commons"></i>Commons</a>
+            </li>
+            <li data-page="#">
+              <a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>Help</a>
+            </li>
+          </ul>
+        </td>
+        <td>
+          <!-- <td>
+              <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="#">Modules</a></li>
+                <li><a href="#">Piazza</a></li>
+                <li><a href="#">Zoom Meetings</a></li>
+                <li><a href="../assignments/index.html">Assignments</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="../grades.html">Grades</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Panopto Video</a></li>
+                <li><a href="#">Discussions</a></li>
+                <li><a href="#">Announcements</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Rubrics</a></li>
+                <li><a href="#">Outcomes</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Syllabus</a></li>
+                <li><a href="index.html">Settings</a></li>
+              </ul>
+            </td> -->
+
+          <div style="font-size: 25px;padding-left: 20px;margin-top: 10px;">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <p>
+                  <i class="fa fa-bars" style="font-size: 20px; color: rgb(230, 35, 35)"></i>
+                </p>
+                <li class="breadcrumb-item" style="color:rgb(230, 35, 35); margin-left: 20px;">CS5610.2304.2304</li>
+                <li class="breadcrumb-item active" aria-current="page">Settings</li>
+              </ol>
+            </nav>
+          </div>
+          <hr />
+          <div>
+            <!-- left panel  -->
+            <table width="100%">
+              <tbody>
+                <tr>
+                  <td>
+                    <ul class="left-panel">
+                      <li><a href="../home.html">Home</a></li>
+                      <li><a href="#">Modules</a></li>
+                      <li><a href="#">Piazza</a></li>
+                      <li><a href="#">Zoom Meetings</a></li>
+                      <li>
+                        <a href="../assignments/index.html">Assignments</a>
+                      </li>
+                      <li><a href="#">Quizzes</a></li>
+                      <li><a href="../grades.html">Grades</a></li>
+                      <li><a href="#">People</a></li>
+                      <li><a href="#">Panopto Video</a></li>
+                      <li><a href="#">Discussions</a></li>
+                      <li><a href="#">Announcements</a></li>
+                      <li><a href="#">Pages</a></li>
+                      <li><a href="#">Files</a></li>
+                      <li><a href="#">Rubrics</a></li>
+                      <li><a href="#">Outcomes</a></li>
+                      <li><a href="#">Collaborations</a></li>
+                      <li><a href="#">Syllabus</a></li>
+                      <li><a href="navigation.html">Settings</a></li>
                     </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li><a href="../home.html">Home</a></li>
-                        <li><a href="#">Modules</a></li>
-                        <li><a href="#">Piazza</a></li>
-                        <li><a href="#">Zoom Meetings</a></li>
-                        <li><a href="../assignments/index.html">Assignments</a></li>
-                        <li><a href="#">Quizzes</a></li>
-                        <li><a href="../grades.html">Grades</a></li>
-                        <li><a href="#">People</a></li>
-                        <li><a href="#">Panopto Video</a></li>
-                        <li><a href="#">Discussions</a></li>
-                        <li><a href="#">Announcements</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Files</a></li>
-                        <li><a href="#">Rubrics</a></li>
-                        <li><a href="#">Outcomes</a></li>
-                        <li><a href="#">Collaborations</a></li>
-                        <li><a href="#">Syllabus</a></li>
-                        <li><a href="index.html">Settings</a></li>
+                  </td>
+
+                  <!-- CONTENT  -->
+                  <td>
+                    <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                        <a style="text-decoration: none; color: rgb(230, 35, 35);" class="nav-link"
+                          href="index.html">Course Details</a>
+                      </li>
+                      <li class="nav-item">
+                        <a style="text-decoration: none; color: rgb(230, 35, 35);" class="nav-link"
+                          href="#">Sections</a>
+                      </li>
+                      <li class="nav-item">
+                        <a style="text-decoration: none; color: rgb(230, 35, 35);" class="nav-link active"
+                          href="navigation.html">Navigation</a>
+                      </li>
+                      <li class="nav-item">
+                        <a style="text-decoration: none; color: rgb(230, 35, 35);" class="nav-link disabled" href="#"
+                          tabindex="-1">Apps</a>
+                      </li>
+                      <li class="nav-item">
+                        <a style="text-decoration: none; color: rgb(230, 35, 35);" class="nav-link disabled" href="#"
+                          tabindex="-1">Feature Options</a>
+                      </li>
+                      <li class="nav-item">
+                        <a style="text-decoration: none; color: rgb(230, 35, 35);" class="nav-link disabled" href="#"
+                          tabindex="-1">Integration</a>
+                      </li>
                     </ul>
-                </td>
-                <td>
-                    <form>
-                        <button>
-                            <a type="button" href="index.html">Course Details</a>
-                        </button>
-                        <button>
-                            <a type="button" href="#">Sections</a>
-                        </button>
-                        <button>
-                            <a type="button" href="navigation.html">Navigation</a>
-                        </button>
-                        <button>
-                            <a type="button" href="#">Apps</a>
-                        </button>
-                        <button>
-                            <a type="button" href="#">Feature Options</a>
-                        </button>
-                        <button>
-                            <a type="button" href="#">Integration</a>
-                        </button>
-                    </form>
-                    <p>Drag and drop items to reorder them in the course navigation.</p>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Modules</a></li>
-                        <li><a href="#">Piazza</a></li>
-                        <li><a href="#">Zoom Meetings</a></li>
-                        <li><a href="#">Assignments</a></li>
-                        <li><a href="#">Quizzes</a></li>
-                        <li><a href="#">Grades</a></li>
-                        <li><a href="#">People</a></li>
-                        <li><a href="#">Panopto Video</a></li>
-                    </ul>
+                    <p style="margin-top: 2rem;">
+                      Drag and drop items to reorder them in the course
+                      navigation.
+                    </p>
+
+                    <!-- NAVIGATION CONTENT 1-->
+
+                    <div class="navigation-main">
+                      <div>
+                        <div class="navigation-content-head">
+                          <p><a href="#" style="text-decoration: none; color: black;"> Home </a></p>
+                        </div>
+                        <div class="navigation-content-head">
+                          <p><a href="#" style="text-decoration: none; color: black;"> Modules </a></p>
+                          <p>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </p>
+                        </div>
+                        <div class="navigation-content-head">
+                          <p> <a href="#" style="text-decoration: none; color: black;"> Piazza </a></p>
+                          <p>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </p>
+                        </div>
+                        <div class="navigation-content-head">
+                          <p><a href="#" style="text-decoration: none; color: black;"> Zoom Meetings </a></p>
+                          <p>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </p>
+                        </div>
+                        <div class="navigation-content-head">
+                          <p><a href="#" style="text-decoration: none; color: black;"> Assignments </a></p>
+                          <p>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </p>
+                        </div>
+                        <div class="navigation-content-head">
+                          <p><a href="#" style="text-decoration: none; color: black;"> Quizzes </a></p>
+                          <p>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </p>
+                        </div>
+                        <div class="navigation-content-head">
+                          <p><a href="#" style="text-decoration: none; color: black;"> Grades </a></p>
+                          <p>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </p>
+                        </div>
+                        <div class="navigation-content-head">
+                          <p><a href="#" style="text-decoration: none; color: black;"> People </a></p>
+                          <p>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </p>
+                        </div>
+                        <div class="navigation-content-head">
+                          <p><a href="#" style="text-decoration: none; color: black;"> Panopto Video </a></p>
+                          <p>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <br />
                     <p>Drag items here to hide from students.</p>
-                    <ul>
-                        <li><a href="#">Chat</a></li>
-                        <p>Page disables, won't appear in navigation</p>
-                        <li><a href="#">SCORM</a></li>
-                        <p>Page disables, won't appear in navigation</p>
-                        <li><a href="#">Attendance</a></li>
-                        <p>Page disables, won't appear in navigation</p>
-                        <li><a href="#">Barnes and Noble Bookstore</a></li>
-                        <p>Page disables, won't appear in navigation</p>
-                        <li><a href="#">Digication</a></li>
-                        <p>Page disables, won't appear in navigation</p>
-                        <li><a href="#">Top Hat</a></li>
-                        <p>Page disables, won't appear in navigation</p>
-                        <li><a href="#">Syllabus</a></li>
-                        <p>Page disables, won't appear in navigation</p>
-                        <li><a href="#">Perusall</a></li>
-                        <p>Page disables, won't appear in navigation</p>
-                        <li><a href="#">Microsoft Team Meetings</a></li>
-                        <p>Page disables, won't appear in navigation</p>
-                        <li><a href="#">FACT Reporting and Photo Roster</a></li>
-                        <p>Page disables, won't appear in navigation</p>
-                        <li><a href="#">Progress Reports(Navigate)</a></li>
-                        <p>Page disables, won't appear in navigation</p>
-                        <li><a href="#">Microsoft Teams for Canvas</a></li>
-                        <p>Page disables, won't appear in navigation</p>
-                        <li><a href="#">VHL Central</a></li>
-                        <p>Page disables, won't appear in navigation</p>
-                        <li><a href="#">Gradescope 1.3</a></li>
-                        <p>Page disables, won't appear in navigation</p>
-                        <li><a href="#">Credentials</a></li>
-                        <p>Page disables, won't appear in navigation</p>
-                        <li><a href="#">iClicker</a></li>
-                        <p>Page disables, won't appear in navigation</p>
-                    </ul>
-                    <button type="button">Save</button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+
+                    <!-- NAVIGATION CONTENT 2-->
+
+                    <div class="navigation-main">
+
+                      <div class="nav-main-head" style=>
+                        <div class="nav-main-head-top">
+                          <p><a href="#" style="text-decoration: none; color: black;"> Chat </a></p>
+                          <p>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </p>
+                        </div>
+                        <div class="nav-main-head-bottom">
+                          <p>Page disabled, won't appear in navigation</p>
+                        </div>
+                      </div>
+                      <div class="nav-main-head" style=>
+                        <div class="nav-main-head-top">
+                          <p><a href="#" style="text-decoration: none; color: black;"> SCORM </a></p>
+                          <p>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </p>
+                        </div>
+                        <div class="nav-main-head-bottom">
+                          <p>Page disabled, won't appear in navigation</p>
+                        </div>
+                      </div>
+                      <div class="nav-main-head" style=>
+                        <div class="nav-main-head-top">
+                          <p><a href="#" style="text-decoration: none; color: black;"> Attendance </a></p>
+                          <p>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </p>
+                        </div>
+                        <div class="nav-main-head-bottom">
+                          <p>Page disabled, won't appear in navigation</p>
+                        </div>
+                      </div>
+                      <div class="nav-main-head" style=>
+                        <div class="nav-main-head-top">
+                          <p><a href="#" style="text-decoration: none; color: black;"> Barnes and Noble Bookstore </a>
+                          </p>
+                          <p>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </p>
+                        </div>
+                        <div class="nav-main-head-bottom">
+                          <p>Page disabled, won't appear in navigation</p>
+                        </div>
+                      </div>
+                      <div class="nav-main-head" style=>
+                        <div class="nav-main-head-top">
+                          <p><a href="#" style="text-decoration: none; color: black;"> Digication </a></p>
+                          <p>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </p>
+                        </div>
+                        <div class="nav-main-head-bottom">
+                          <p>Page disabled, won't appear in navigation</p>
+                        </div>
+                      </div>
+                      <div class="nav-main-head" style=>
+                        <div class="nav-main-head-top">
+                          <p><a href="#" style="text-decoration: none; color: black;"> Top Hat </a></p>
+                          <p>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </p>
+                        </div>
+                        <div class="nav-main-head-bottom">
+                          <p>Page disabled, won't appear in navigation</p>
+                        </div>
+                      </div>
+                      <div class="nav-main-head" style=>
+                        <div class="nav-main-head-top">
+                          <p><a href="#" style="text-decoration: none; color: black;"> Syllabus </a></p>
+                          <p>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </p>
+                        </div>
+                        <div class="nav-main-head-bottom">
+                          <p>Page disabled, won't appear in navigation</p>
+                        </div>
+                      </div>
+                      <div class="nav-main-head" style=>
+                        <div class="nav-main-head-top">
+                          <p><a href="#" style="text-decoration: none; color: black;"> Perusall </a></p>
+                          <p>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </p>
+                        </div>
+                        <div class="nav-main-head-bottom">
+                          <p>Page disabled, won't appear in navigation</p>
+                        </div>
+                      </div>
+                      <div class="nav-main-head" style=>
+                        <div class="nav-main-head-top">
+                          <p><a href="#" style="text-decoration: none; color: black;"> Microsoft Team Meetings </a></p>
+                          <p>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </p>
+                        </div>
+                        <div class="nav-main-head-bottom">
+                          <p>Page disabled, won't appear in navigation</p>
+                        </div>
+                      </div>
+                      <div class="nav-main-head" style=>
+                        <div class="nav-main-head-top">
+                          <p><a href="#" style="text-decoration: none; color: black;"> FACT Reporting and Photo Roster
+                            </a></p>
+                          <p>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </p>
+                        </div>
+                        <div class="nav-main-head-bottom">
+                          <p>Page disabled, won't appear in navigation</p>
+                        </div>
+                      </div>
+                      <div class="nav-main-head" style=>
+                        <div class="nav-main-head-top">
+                          <p><a href="#" style="text-decoration: none; color: black;"> Progress Reports(Navigate) </a>
+                          </p>
+                          <p>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </p>
+                        </div>
+                        <div class="nav-main-head-bottom">
+                          <p>Page disabled, won't appear in navigation</p>
+                        </div>
+                      </div>
+                      <div class="nav-main-head" style=>
+                        <div class="nav-main-head-top">
+                          <p><a href="#" style="text-decoration: none; color: black;"> Microsoft Teams for Canvas </a>
+                          </p>
+                          <p>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </p>
+                        </div>
+                        <div class="nav-main-head-bottom">
+                          <p>Page disabled, won't appear in navigation</p>
+                        </div>
+                      </div>
+                      <div class="nav-main-head" style=>
+                        <div class="nav-main-head-top">
+                          <p><a href="#" style="text-decoration: none; color: black;"> VHL Central </a></p>
+                          <p>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </p>
+                        </div>
+                        <div class="nav-main-head-bottom">
+                          <p>Page disabled, won't appear in navigation</p>
+                        </div>
+                      </div>
+                      <div class="nav-main-head" style=>
+                        <div class="nav-main-head-top">
+                          <p><a href="#" style="text-decoration: none; color: black;"> Gradescope 1.3 </a></p>
+                          <p>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </p>
+                        </div>
+                        <div class="nav-main-head-bottom">
+                          <p>Page disabled, won't appear in navigation</p>
+                        </div>
+                      </div>
+                      <div class="nav-main-head" style=>
+                        <div class="nav-main-head-top">
+                          <p><a href="#" style="text-decoration: none; color: black;"> Credentials </a></p>
+                          <p>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </p>
+                        </div>
+                        <div class="nav-main-head-bottom">
+                          <p>Page disabled, won't appear in navigation</p>
+                        </div>
+                      </div>
+                      <div class="nav-main-head" style=>
+                        <div class="nav-main-head-top">
+                          <p><a href="#" style="text-decoration: none; color: black;"> iClicker </a></p>
+                          <p>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </p>
+                        </div>
+                        <div class="nav-main-head-bottom">
+                          <p>Page disabled, won't appear in navigation</p>
+                        </div>
+                      </div>
+                    </div>
+          </div>
+          <button style="margin-top: 1rem;" type="button" class="btn btn-danger">Save</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  </td>
+  </tr>
+  </tbody>
+  </table>
 </body>
 
 </html>

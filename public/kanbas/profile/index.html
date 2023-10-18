@@ -2,67 +2,325 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        td {
-            vertical-align: top;
-            /* Align table cells at the top */
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="../../css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <title>Title</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="../../js/script.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("edit-profile-disabled").style.display =
+        "block";
+      document.getElementById("edit-profile-enabled").style.display = "none";
+    });
+
+    function showSection(sectionName) {
+      document.getElementById("edit-profile-disabled").style.display = "none";
+      document.getElementById("edit-profile-enabled").style.display = "none";
+
+      document.getElementById(sectionName).style.display = "block";
+    }
+  </script>
+  <style>
+    td {
+      vertical-align: top;
+      /* Align table cells at the top */
+    }
+  </style>
 </head>
 
 <body>
+  <!-- =========== EDIT PROFILE DISABLED =========== -->
+  <div id="edit-profile-disabled">
     <table width="100%">
-        <tbody>
-            <tr>
-                <td>
-                    <ul>
-                        <li><a href="index.html">Account</a></li>
-                        <li><a href="../dashboard.html">Dashboard</a></li>
-                        <li><a href="../home.html">Courses</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Commons</a></li>
-                        <li><a href="#">Help</a></li>
+      <tbody>
+        <tr class="main-sidebar">
+          <!-- side bar -->
+          <td class="main-sidebar">
+            <ul class="sidebar">
+              <li>
+                <img src="../../images/logo.png" width="65px" height="65px" />
+              </li>
+              <li>
+                <a href="index.html">
+                  <i class="fa fa-user-circle" id="account-icon"></i>Account</a>
+              </li>
+              <li>
+                <a href="../dashboard.html">
+                  <i class="fa fa-tachometer-alt"></i>Dashboard</a>
+              </li>
+              <li>
+                <a href="../home.html">
+                  <i class="fa fa-book" aria-hidden="true"></i>Courses</a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-calendar" aria-hidden="true"></i>Calendar</a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-inbox" aria-hidden="true"></i>Inbox</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-clock" aria-hidden="true"></i>History</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-video" aria-hidden="true"></i>Studio</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-creative-commons"></i>Commons</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>Help</a>
+              </li>
+            </ul>
+          </td>
+
+          <td>
+            <div class="d-flex align-items-center gap-4" style="padding: 20px 5px 10px 20px">
+              <p>
+                <i class="fa fa-bars" style="font-size: 20px; color: rgb(230, 35, 35)"></i>
+              </p>
+              <p>Amisha Tiwari's Profile</p>
+            </div>
+            <hr />
+            <table width="100%">
+              <tbody>
+                <tr>
+                  <!-- left panel -->
+                  <td>
+                    <ul class="left-panel">
+                      <li><a href="#">Notifications</a></li>
+                      <li><a href="index.html">Profile</a></li>
+                      <li><a href="#">Files</a></li>
+                      <li><a href="#">Settings</a></li>
+                      <li><a href="#">ePortfolios</a></li>
+                      <li><a href="#">Shared Content</a></li>
+                      <li><a href="#">The Hub</a></li>
+                      <li><a href="#">Qwickly Course Tools</a></li>
+                      <li><a href="#">Global Announcements</a></li>
                     </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li><a href="#">Notifications</a></li>
-                        <li><a href="index.html">Profile</a></li>
-                        <li><a href="#">Files</a></li>
-                        <li><a href="#">Settings</a></li>
-                        <li><a href="#">ePortfolios</a></li>
-                        <li><a href="#">Shared Content</a></li>
-                        <li><a href="#">The Hub</a></li>
-                        <li><a href="#">Qwickly Course Tools</a></li>
-                        <li><a href="#">Global Announcements</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <p> Amisha Tiwari's Profile </p>
-                    <br />
-                    <h2>Amisha Tiwari</h2>
-                    <h3>Contact</h3>
-                    <p>Email - tiwari.ami@northeastern.edu</p>
-                    <br />
-                    <h3>Biography</h3>
-                    <p>Student, Software Engineer</p>
-                    <br />
-                    <h3>Links</h3>
-                    <p><a href="#">Youtube</a></p>
-                </td>
-                <td>
-                    <button>
-                        <a type="button" href="edit.html">Edit Profile</a>
-                    </button>
-                </td>
-            </tr>
-        </tbody>
+                  </td>
+
+                  <div id="edit-profile-disabled">
+                    <td style="margin-left: 2rem; width: 650px; float: left; position: relative;">
+                      <div style="position: absolute; right: 0;">
+                        <button type="button" onclick="showSection('edit-profile-enabled')" style="background-color: lightgrey; border: solid lightgrey;">
+                          <!-- <a type="button" href="edit.html">Edit Profile</a> -->
+                          <i class="fas fa-pen fa-rotate-270"></i> Edit Profile
+                        </button>
+                      </div>
+                      <p>
+                        <i class="fa fa-user-circle" id="account-icon-edit"></i>
+                      </p>
+                      <h3>Amisha Tiwari</h3>
+                      <br />
+                      <h3>Contact</h3>
+                      <p>Email - tiwari.ami@northeastern.edu</p>
+                      <br />
+                      <h3>Biography</h3>
+                      <p>Student, Software Engineer</p>
+                      <br />
+                      <h3>Links</h3>
+                      <p><a href="#" style="text-decoration: none; color: red;">Youtube</a></p>
+                    </td>
+                  </div>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
     </table>
+  </div>
+
+  <div id="edit-profile-enabled">
+    <table width="100%">
+      <tbody>
+        <tr class="main-sidebar">
+          <!-- side bar -->
+          <td class="main-sidebar">
+            <ul class="sidebar">
+              <li>
+                <img src="../../images/logo.png" width="65px" height="65px" />
+              </li>
+              <li>
+                <a href="index.html">
+                  <i class="fa fa-user-circle" id="account-icon"></i>Account</a>
+              </li>
+              <li>
+                <a href="../dashboard.html">
+                  <i class="fa fa-tachometer-alt"></i>Dashboard</a>
+              </li>
+              <li>
+                <a href="../home.html">
+                  <i class="fa fa-book" aria-hidden="true"></i>Courses</a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-calendar" aria-hidden="true"></i>Calendar</a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-inbox" aria-hidden="true"></i>Inbox</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-clock" aria-hidden="true"></i>History</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-video" aria-hidden="true"></i>Studio</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-creative-commons"></i>Commons</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>Help</a>
+              </li>
+            </ul>
+          </td>
+
+          <td>
+            <div class="d-flex align-items-center gap-4" style="padding: 20px 5px 10px 20px">
+              <p>
+                <i class="fa fa-bars" style="font-size: 20px; color: rgb(230, 35, 35)"></i>
+              </p>
+              <p>Amisha Tiwari's Profile</p>
+            </div>
+            <hr />
+            <table width="100%">
+              <tbody>
+                <tr>
+                  <!-- left panel -->
+                  <td>
+                    <ul class="left-panel">
+                      <li><a href="#">Notifications</a></li>
+                      <li onclick="showSection('edit-profile-disabled')">
+                        <a href="index.html">Profile</a>
+                      </li>
+                      <li><a href="#">Files</a></li>
+                      <li><a href="#">Settings</a></li>
+                      <li><a href="#">ePortfolios</a></li>
+                      <li><a href="#">Shared Content</a></li>
+                      <li><a href="#">The Hub</a></li>
+                      <li><a href="#">Qwickly Course Tools</a></li>
+                      <li><a href="#">Global Announcements</a></li>
+                    </ul>
+                  </td>
+
+                  <!-- ====== EDIT PROFILE ======= -->
+                  <td class="main-edit-profile">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm">
+                          <p>
+                            <i class="fa fa-user-circle" id="account-icon-edit"></i>
+                          </p>
+                        </div>
+                        <div class="col-sm">
+                          <a href="index.html">
+                            <button type="button" onclick="showSection('edit-profile-enabled')" style="background-color: lightgrey; border: solid lightgrey;">
+                              <i class="fas fa-pen fa-rotate-270"></i> Cancel Editing
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+            
+                    <form>
+                      <div class="top-edit-profile">
+                        <div class="mb-3 col-6">
+                          <label for="exampleFormControlInput1" class="form-label">Name:</label>
+                          <input id="input" type="text" class="form-control input-sm" placeholder="Amisha Tiwari"
+                            required />
+                        </div>
+
+                        <div class="mb-3 col-6">
+                          <label>Pronouns:</label>
+                          <select class="form-select" aria-label="Default select example">
+                            <option value="COMEDY">Comedy</option>
+                            <option value="DRAMA">Drama</option>
+                            <option selected value="SCIFI">None</option>
+                            <option value="FANTASY">Fantasy</option>
+                          </select>
+                        </div>
+
+                        <div class="mb-10 col-6">
+                          <label for="exampleFormControlInput1" class="form-label">Title:</label>
+                          <input id="input" type="text" class="form-control input-sm" required />
+                        </div>
+                      </div>
+                      <!-- ============ CONTACT =========== -->
+                      <h3>Contact</h3>
+                      <p>Email - tiwari.ami@northeastern.edu</p>
+                      <h3>Biography</h3>
+                      <form id="textarea">
+                        <div class="mb-3 col-9">
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" cols="60">
+Student, Software Engineer</textarea>
+                        </div>
+                      </form>
+                      <h3>Links</h3>
+                      <ul>
+                        <li>
+                          <table width="100%">
+                            <thead>
+                              <tr>
+                                <th>Title</th>
+                                <th>URL</th>
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <input id="input" type="text" class="form-control input-sm" placeholder="YouTube"
+                                    required />
+                                </td>
+                                <td>
+                                  <input id="input" type="text" class="form-control input-sm"
+                                    placeholder="https://www.youtube.com" required />
+                                </td>
+                                <td><a href="#">Remove</a></td>
+                              </tr>
+
+                              <tr>
+                                <td class="edit-profile-btn">
+                                  <button type="button" class="btn btn-secondary">
+                                    Add another link
+                                  </button>
+                                  <button type="button" class="btn btn-danger"
+                                    onclick="showSection('edit-profile-disabled')">
+                                    <a id="edit-profile-submit-btn" type="button" href="index.html">
+                                      Save Profile
+                                    </a>
+                                  </button>
+                                  <button type="button" class="btn btn-primary"
+                                    onclick="showSection('edit-profile-disabled')">
+                                    <a id="edit-profile-submit-btn" type="button" href="index.html">Cancel</a>
+                                  </button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </li>
+                      </ul>
+                    </form>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
 
 </html>

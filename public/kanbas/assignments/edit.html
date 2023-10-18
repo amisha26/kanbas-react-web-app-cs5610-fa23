@@ -1,41 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
 
-<head>
-    <meta charset="UTF-8">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <title>Title</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../js/script.js"></script>
     <style>
-        td {
-            vertical-align: top;
-            /* Align table cells at the top */
-        }
+      td {
+        vertical-align: top;
+        /* Align table cells at the top */
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <table width="100%">
-        <tbody>
-            <tr>
-                <td>
-                    <ul>
-                        <li><a href="../profile/index.html">Account</a></li>
-                        <li><a href="../dashboard.html">Dashboard</a></li>
-                        <li><a href="../home.html">Courses</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Commons</a></li>
-                        <li><a href="#">Help</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
+      <tbody>
+        <tr class="main-sidebar">
+          <!-- side bar -->
+          <td class="main-sidebar">
+            <ul class="sidebar">
+              <li>
+                <img src="../../images/logo.png" width="65px" height="65px" />
+              </li>
+              <li>
+                <a href="../profile/index.html">
+                  <i class="fa fa-user-circle" id="account-icon"></i>Account</a
+                >
+              </li>
+              <li>
+                <a href="../dashboard.html">
+                  <i class="fa fa-tachometer-alt"></i>Dashboard</a
+                >
+              </li>
+              <li>
+                <a href="edit.html">
+                  <i class="fa fa-book" aria-hidden="true"></i>Courses</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-calendar" aria-hidden="true"></i>Calendar</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-inbox" aria-hidden="true"></i>Inbox</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-clock" aria-hidden="true"></i>History</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-video" aria-hidden="true"></i>Studio</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-creative-commons"></i>Commons</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-question-circle" aria-hidden="true"></i
+                  >Help</a
+                >
+              </li>
+            </ul>
+          </td>
+
+          <td>
+            <!-- page header  -->
+
+            <div style="font-size: 25px; padding-left: 20px; margin-top: 10px">
+              <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <p>
+                    <i class="fa fa-bars" style="font-size: 20px; color: rgb(230, 35, 35)"></i>
+                  </p>
+                  <li class="breadcrumb-item" style="color: rgb(230, 35, 35); margin-left: 20px;">
+                    CS5610.2304.2304
+                  </li>
+                  <li
+                    class="breadcrumb-item active"
+                    aria-current="page"
+                    style="color: rgb(230, 35, 35)"
+                  >
+                    Assignments
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    A1 - ENV+....
+                  </li>
+                </ol>
+              </nav>
+            </div>
+            <hr />
+
+            <!-- TOP HEADER BELOW CONTENT  -->
+            <div class="gd-top-head" style="padding-left: 20px">
+              <div class="gd">
+                <div class="gd-top-head-left">
+                  202310_2 Fall 2022 semester...
+                </div>
+                <div class="gd-top-head-right">
+                  <button
+                    class="btn btn-light"
+                    style="color: green; font-weight: 500; font-size: 18px"
+                  >
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    Published
+                  </button>
+                  <button class="btn btn-secondary">
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- left panel and page content  -->
+
+            <div>
+              <table width="100%">
+                <tbody>
+                  <tr>
+                    <!-- left panel -->
+                    <td>
+                      <ul class="left-panel">
                         <li><a href="../home.html">Home</a></li>
                         <li><a href="#">Modules</a></li>
                         <li><a href="#">Piazza</a></li>
                         <li><a href="#">Zoom Meetings</a></li>
-                        <li><a href="index.html">Assignments</a></li>
+                        <li><a href="edit.html">Assignments</a></li>
                         <li><a href="#">Quizzes</a></li>
                         <li><a href="../grades.html">Grades</a></li>
                         <li><a href="#">People</a></li>
@@ -48,141 +159,302 @@
                         <li><a href="#">Outcomes</a></li>
                         <li><a href="#">Collaborations</a></li>
                         <li><a href="#">Syllabus</a></li>
-                        <li><a href="../settingstab/index.html">Settings</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <form>
-                        <select id="select-one-genre">
-                            <option value="COMEDY">Comedy</option>
-                            <option value="DRAMA">Drama</option>
-                            <option selected value="SCIFI">
-                                SpeedGrader</option>
-                            <option value="FANTASY">Fantasy</option>
-                        </select>
-                    </form>
-                    <h2>Assignment Name</h2>
-                    <form>
-                        <input type="text" id="text-fields-first-name" placeholder="A1 - ENV + HTML" /><br />
-                        <br />
-                        <form id="textarea">
-                            <textarea cols="30" rows="5">This is the assignment description/</textarea>
-                        </form>
+                        <li>
+                          <a href="../settingstab/index.html">Settings</a>
+                        </li>
+                      </ul>
+                    </td>
 
-                        <label>Points</label><br />
-                        <input type="text" id="text-fields-first-name" placeholder="100" /><br />
-                        <br />
-                        <label>Assignment Group</label><br />
-                        <form>
-                            <select id="select-one-genre">
-                                <option value="COMEDY">Comedy</option>
-                                <option value="DRAMA">Drama</option>
-                                <option selected value="SCIFI">
-                                    ASSIGNMENTS</option>
-                                <option value="FANTASY">Fantasy</option>
-                            </select>
-                        </form>
-                        <br />
-                        <label>Display Grade as</label><br />
+                    <!-- page content  -->
+                    <td style="width: 1000px">
+                      <hr />
+                      <div>
+                        <!-- input box 1  -->
 
-
-                        <form>
-                            <select id="select-one-genre">
-                                <option value="COMEDY">Comedy</option>
-                                <option value="DRAMA">Drama</option>
-                                <option selected value="SCIFI">
-                                    Percentage</option>
-                                <option value="FANTASY">Fantasy</option>
-                            </select>
-                        </form>
+                        <div>
+                          <label style="margin-bottom: 10px"
+                            >Assignment Name</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            value="A1 - ENV + HTML"
+                          />
+                          <br />
+                          <textarea
+                            rows="4"
+                            cols="60"
+                            class="form-control"
+                            aria-label="With textarea"
+                          >
+This assignment describes how to install the development environment for creating and working with Web applications we will be developing this semester. We will add new content every week, pushing the code to a GitHub source repository, and then deploying the content to a remote server hosted on Netlify.
+                        </textarea
+                          >
+                        </div>
                         <br />
-                        <label>Submission Type</label><br />
-                        <form>
-                            <select id="select-one-genre">
-                                <option value="COMEDY">Comedy</option>
-                                <option value="DRAMA">Drama</option>
-                                <option selected value="SCIFI">
-                                    Online</option>
-                                <option value="FANTASY">Fantasy</option>
-                            </select>
-                        </form>
-                        <br />
-                        <label>Online Entry options</label><br />
-                        <input type="checkbox" value="Text Entry" name="check-entry" id="chkbox-text" />
-                        <label for="chkbox-text">Text Entry</label> <br />
-                        <input type="checkbox" value="Website URL" name="check-entry" id="chkbox-web" />
-                        <label for="chkbox-web">Website URL</label> <br />
-                        <input type="checkbox" value="Media Recordings" name="check-entry" id="chkbox-media" />
-                        <label for="chkbox-media">Media Recordings</label> <br />
-                        <input type="checkbox" value="Student Annotation" name="check-entry" id="chkbox-annotation" />
-                        <label for="chkbox-annotation">Student Annotation</label> <br />
-                        <input type="checkbox" value="File Uploads" name="check-entry" id="chkbox-uploads" />
-                        <label for="chkbox-uploads">File Uploads</label>
-                    </form>
-                    <br />
-                    <br />
-                    <label>Submission Attempts</label><br />
-                    <form>
-                        <select id="select-one-genre">
-                            <option value="COMEDY">Comedy</option>
-                            <option value="DRAMA">Drama</option>
-                            <option selected value="SCIFI">
-                                Unlimited</option>
-                            <option value="FANTASY">Fantasy</option>
-                        </select>
-                    </form>
-                    <br />
-                    <label>Plagiarism Review</label><br />
-                    <form>
-                        <select id="select-one-genre">
-                            <option value="COMEDY">Comedy</option>
-                            <option value="DRAMA">Drama</option>
-                            <option selected value="SCIFI">
-                                None</option>
-                            <option value="FANTASY">Fantasy</option>
-                        </select>
-                    </form>
-                    <br />
-                    <label>Group Assignment</label><br />
-                    <input type="checkbox" value="Text Entry" name="check-entry" id="chkbox-text" />
-                    <label for="chkbox-text">This is a group assignment</label> <br />
-                    <br />
-                    <label>Peer Reviews</label><br />
-                    <input type="checkbox" value="Text Entry" name="check-entry" id="chkbox-text" />
-                    <label for="chkbox-text">Require Peer Reviews</label> <br />
-                    <br />
-                    <label>Assign</label><br />
-                    <label>Assign to</label><br />
-                    <input type="text" id="text-fields-first-name" placeholder="Everyone" /><br />
-                    <br />
-                    <label for="text-fields-due">
-                        Due
-                    </label>
-                    <input type="date" id="text-fields-due" value="2021-01-01" /><br />
-                    <br />
-                    <label for="text-fields-from">
-                        Available from
-                    </label>
-                    <input type="date" id="text-fields-from" value="2021-01-01" /><br />
-                    <br />
-                    <label for="text-fields-until">
-                        Until
-                    </label>
-                    <input type="date" id="text-fields-until" value="2021-01-01" /><br />
-                    <br />
-                    <button>
-                        <a type="button" href="index.html">Cancel</a>
-                    </button>
 
-                    <button>
-                        <a type="button" href="index.html">Save</a>
-                    </button>
-                </td>
-                <td>
-                </td>
-            </tr>
-        </tbody>
+                        <!-- input box 2  -->
+                        <div
+                          class="d-flex flex-column gap-4"
+                          style="align-items: center; justify-content: center"
+                        >
+                          <div class="d-flex gap-4 justify-content-center">
+                            <label>Point</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              style="width: 600px"
+                              value="100"
+                            />
+                          </div>
+
+                          <div class="d-flex gap-4">
+                            <label>Assignment Group</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              value="ASSIGNMENTS"
+                              style="width: 600px"
+                            />
+                          </div>
+                          <div class="d-flex gap-4">
+                            <label>Display Grade as</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              value="Percentage"
+                              style="width: 600px"
+                            />
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                              style="border: 1px solid black"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault"
+                            >
+                              Do not count this assignment in final grades
+                            </label>
+                          </div>
+                          <!-- ============ select input  ================  -->
+                          <div
+                            class="d-flex gap-4"
+                            style="justify-content: center; margin-left: -100px"
+                          >
+                            <label>Submittion Type</label>
+                            <div
+                              style="
+                                border: 1px solid lightgray;
+                                padding: 40px;
+                                border-radius: 4px;
+                                width: 500px;
+                              "
+                            >
+                              <select
+                                style="width: 300px"
+                                class="form-select"
+                                aria-label="Default select example"
+                              >
+                                <option selected>Online</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                              <br />
+                              <h5 style="margin-bottom: 20px">
+                                Online Entry Options
+                              </h5>
+                              <div class="d-flex flex-column gap-4">
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    id="flexCheckDefault"
+                                    checked
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="flexCheckDefault"
+                                  >
+                                    Text Entry
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    id="flexCheckDefault"
+                                    checked
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="flexCheckDefault"
+                                  >
+                                    Website Url
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    id="flexCheckDefault"
+                                    checked
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="flexCheckDefault"
+                                  >
+                                    Media Recording
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    id="flexCheckDefault"
+                                    style="border: 1px solid black"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="flexCheckDefault"
+                                  >
+                                    Student annotations
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    id="flexCheckDefault"
+                                    style="border: 1px solid black"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="flexCheckDefault"
+                                  >
+                                    File Uploads
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- =============== ASSIGN ============= -->
+                          <div 
+                            class="d-flex gap-4"
+                            style="justify-content: center; margin-left: -35px">
+                            <lable>Assign</lable>
+                              <div
+                              style="
+                                border: 1px solid lightgray;
+                                padding: 40px;
+                                border-radius: 4px;
+                                width: 500px;
+                                position: relative;
+
+                              "
+                              >
+
+                                <label style="margin-bottom: 4px;"><strong>Assign to</strong></label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  style="width: 420px"
+                                  value="Everyone"
+                                />
+                                <br/>
+
+                                <label style="margin-bottom: 4px;"><strong>Due</strong></label>
+                                <input
+                                  type="date"
+                                  class="form-control form-control-date"
+                                  id="exampleColorInput"
+                                  value="#563d7c"
+                                  title="Choose your color"
+                                />
+                                <br/>
+                                <div class="d-flex gap-3" style="align-items: center;">
+                                  <div>
+                                    <label style="margin-bottom: 4px;"><strong>Availabel From</strong></label>
+                                    <input
+                                      type="date"
+                                      class="form-control form-control-date"
+                                      id="exampleColorInput"
+                                      value="#563d7c"
+                                      title="Choose your color"
+                                      style="width: 200px;"
+                                    />
+                                  </div>
+                                  <div>
+                                    <label style="margin-bottom: 4px;"><strong>Until</strong></label>
+                                    <input
+                                      type="date"
+                                      class="form-control form-control-date"
+                                      id="exampleColorInput"
+                                      value="#563d7c"
+                                      title="Choose your color"
+                                      style="width: 200px;"
+
+                                    />
+                                  </div>
+
+                                </div>
+                                <br/>
+                                <br/>
+
+                                <button class="btn btn-secondary" style="position:absolute; bottom: 0;width: 100%;left:0"> + Add </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <br/>
+                      <div>
+                        <div class="form-check">
+                          <input style="border:1px solid black" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Notify user that this content has changed
+                          </label>
+                        </div>
+                      </div>
+                      <br/>
+                      <div>
+                        <button class="btn btn-secondary">
+                          <a href="index.html" alt="" style="color:white;text-decoration: none;">Cancel </a>
+                          
+                        </button>
+                        <button class="btn btn-danger">
+                          <a href="index.html" alt="" style="color:white;text-decoration: none;">Save </a>
+                        </button>
+
+                      </div>
+                    </td>
+                    <!--  empty page -->
+                    <td style="width: 100px"></td>
+                    <!--  the end  -->
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </td>
+
+          <td></td>
+        </tr>
+      </tbody>
     </table>
-</body>
-
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
 </html>
