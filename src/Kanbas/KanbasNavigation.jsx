@@ -23,8 +23,8 @@ function KanbasNavigation() {
             pathname.includes(name) && "nav__links__active"
           }`}
         >
-          <p style={{ marginTop: ".5rem", height: "2.5rem" }}>{icon}</p>
-          <p style={{ marginTop: "-1rem", height: "1rem" }}>{name}</p>
+          <p style={{ marginTop: ".5rem" }}>{icon}</p>
+          <p style={{ marginTop: "-1rem" }}>{name}</p>
         </Link>
       ))}
     </div>

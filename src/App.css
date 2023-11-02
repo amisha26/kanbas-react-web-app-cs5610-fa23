@@ -91,6 +91,45 @@
   justify-content: space-around;
 }
 
+/* new dashboard  */
+
+.DASH__INPUT,
+.DASH__LIST__INPUT {
+  display: flex;
+  gap: 5px;
+}
+
+.DASH__MAIN__LIST {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.DASH__INPUT input {
+  padding: 0px 3px;
+}
+
+.DASH__LIST__INPUT {
+  height: 3rem;
+  margin-top: 6px;
+}
+.DASH__LIST__INPUT #DASH__ID__NAME {
+  height: 100%;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  padding: 0px 3px;
+}
+
+.DASH__LIST__INPUT #DASH__ID__NAME,
+.DASH__LIST__INPUT input {
+  width: 260px;
+}
+
+.DASH__LIST__INPUT input {
+  padding: 3px;
+}
+
 /* ================== COURSES ==================== */
 
 .course__main {
@@ -114,12 +153,12 @@
   display: flex;
   flex-direction: column;
   width: 250px;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .course__nav__links {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: rgb(211, 12, 12);
 }
 

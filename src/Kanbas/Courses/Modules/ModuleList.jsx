@@ -1,21 +1,118 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { modules } from "../../Database";
 // icons
 import { CiMenuKebab } from "react-icons/ci";
 import { VscPassFilled } from "react-icons/vsc";
 import { AiOutlinePlus } from "react-icons/ai";
 import { MdDragIndicator } from "react-icons/md";
+// redux store
+import { useSelector, useDispatch } from "react-redux";
+import {
+  addModule,
+  deleteModule,
+  updateModule,
+  setModule,
+} from "./modulesReducer";
 
 function ModuleList() {
   const { courseId } = useParams();
+
+  const dispatch = useDispatch();
+  const modules = useSelector((state) => state.modulesReducer.modules);
+  const module = useSelector((state) => state.modulesReducer.module);
 
   /**
    * JSX
    */
   return (
     <div className="module__list">
-      {/* module list buttons */}
+      <li className="list-group-item">
+        <div style={{ display: "flex", gap: "8px" }}>
+          <input
+            style={{ padding: "0px 4px" }}
+            value={module.name}
+            onChange={(e) =>
+              dispatch(setModule({ ...module, name: e.target.value }))
+            }
+          />
+          <button
+            className="btn btn-success"
+            onClick={() => dispatch(addModule({ ...module, course: courseId }))}
+          >
+            Add
+          </button>
+
+          <button
+            className="btn btn-primary"
+            onClick={() => dispatch(updateModule(module))}
+          >
+            Update
+          </button>
+        </div>
+        <br />
+        <textarea
+          style={{ padding: "4px 6px" }}
+          cols={30}
+          value={module.description}
+          onChange={(e) =>
+            dispatch(setModule({ ...module, description: e.target.value }))
+          }
+        />
+      </li>
+      <br />
+
+      <div>
+        {modules
+          ?.filter((module) => module.course === courseId)
+          .map(({ _id, name, description, course }, idx) => (
+            <div
+              key={_id}
+              style={{
+                display: "flex",
+                gap: "8px",
+              }}
+            >
+              <div
+                style={{
+                  width: "600px",
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "6px",
+                  marginTop: "4px",
+                }}
+              >
+                <h2>{name}</h2>
+                <p>{description}</p>
+                <p>{course}</p>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "6px",
+                  marginTop: "4px",
+                  height: "2.5rem",
+                }}
+              >
+                <button
+                  className="btn btn-primary"
+                  onClick={() =>
+                    dispatch(setModule({ _id, name, description, course }))
+                  }
+                >
+                  Edit
+                </button>
+                <button
+                  className="btn btn-danger"
+                  onClick={() => dispatch(deleteModule(_id))}
+                >
+                  Delete
+                </button>
+              </div>
+            </div>
+          ))}
+      </div>
+      <br />
+      {/*============ module list buttons =============== */}
       <div className="module__list__btns">
         <button className="btn btn-secondary">Collpase All</button>
         <button className="btn btn-secondary">View Progress</button>
@@ -63,6 +160,9 @@ function ModuleList() {
             </React.Fragment>
           ))}
       </div>
+      <br />
+      <br />
+      <br />
     </div>
   );
 }

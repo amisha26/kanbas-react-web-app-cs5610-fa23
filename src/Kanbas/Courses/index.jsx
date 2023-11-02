@@ -6,8 +6,6 @@ import {
   useLocation,
   useParams,
 } from "react-router-dom";
-// data
-import { courses } from "../../Kanbas/Database";
 
 // icons
 import { AiOutlineMenu } from "react-icons/ai";
@@ -20,7 +18,7 @@ import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 
-const Courses = () => {
+const Courses = ({ courses }) => {
   const { courseId } = useParams();
   const { pathname } = useLocation();
   const currentPage = pathname.split("/");

@@ -12,20 +12,20 @@ import { BiSolidHelpCircle } from "react-icons/bi";
 export const links = [
   {
     name: "Account",
-    icon: <BiUserCircle style={{ fontSize: "2rem" }} />,
+    icon: <BiUserCircle style={{ fontSize: "2.5rem" }} />,
   },
   {
     name: "Dashboard",
     icon: (
       <FaTachometerAlt
-        style={{ color: "rgb(211, 12, 12)", fontSize: "2rem" }}
+        style={{ color: "rgb(211, 12, 12)", fontSize: "2.5rem" }}
       />
     ),
   },
   {
     name: "Courses",
     icon: (
-      <BiSolidBook style={{ color: "rgb(211, 12, 12)", fontSize: "2rem" }} />
+      <BiSolidBook style={{ color: "rgb(211, 12, 12)", fontSize: "2.5rem" }} />
     ),
   },
   {
@@ -39,14 +39,14 @@ export const links = [
   {
     name: "Inbox",
     icon: (
-      <BsInboxFill style={{ color: "rgb(211, 12, 12)", fontSize: "2rem" }} />
+      <BsInboxFill style={{ color: "rgb(211, 12, 12)", fontSize: "2.5rem" }} />
     ),
   },
   {
     name: "History",
     icon: (
       <BsFillClockFill
-        style={{ color: "rgb(211, 12, 12)", fontSize: "2rem" }}
+        style={{ color: "rgb(211, 12, 12)", fontSize: "2.5rem" }}
       />
     ),
   },
@@ -54,7 +54,7 @@ export const links = [
     name: "Studio",
     icon: (
       <BsCameraVideoFill
-        style={{ color: "rgb(211, 12, 12)", fontSize: "2rem" }}
+        style={{ color: "rgb(211, 12, 12)", fontSize: "2.5rem" }}
       />
     ),
   },
@@ -62,7 +62,7 @@ export const links = [
     name: "Commons",
     icon: (
       <BiLogoCreativeCommons
-        style={{ color: "rgb(211, 12, 12)", fontSize: "2rem" }}
+        style={{ color: "rgb(211, 12, 12)", fontSize: "2.5rem" }}
       />
     ),
   },
@@ -70,7 +70,7 @@ export const links = [
     name: "Help",
     icon: (
       <BiSolidHelpCircle
-        style={{ color: "rgb(211, 12, 12)", fontSize: "2rem" }}
+        style={{ color: "rgb(211, 12, 12)", fontSize: "2.5rem" }}
       />
     ),
   },

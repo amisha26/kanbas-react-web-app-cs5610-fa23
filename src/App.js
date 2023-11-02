@@ -2,7 +2,8 @@ import "./App.css";
 import Labs from "./Labs/a3";
 import Kanbas from "./Kanbas";
 import HelloWorld from "./Labs/a3/HelloWorld";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Nav from "./Nav";
 
 function App() {
   return (
@@ -19,19 +20,34 @@ function App() {
 
 function SelectOptions() {
   return (
-    <div style={{ display: "flex", gap: "10px" }}>
-      <button className="btn btn-primary">
-        <Link to="/Labs" style={{ textDecoration: "none", color: "#fff" }}>
-          Labs
-        </Link>
-      </button>
+    <>
+      {/* <ul className="nav nav-tabs">
+        <li className="nav-item">
+        <Link to="" className="nav-link" >
+            A3
+          </Link>
 
-      <button className="btn btn-primary">
-        <Link to="/kanbas" style={{ textDecoration: "none", color: "#fff" }}>
-          Kanbas
-        </Link>
-      </button>
-    </div>
+        </li>
+        <li className="nav-item">
+          <Link to="" className="nav-link" >
+            A4
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/hello" className="nav-link" >
+            Hello
+          </Link>
+
+        </li>
+        <li className="nav-item">
+          <Link to="/kanbas" className="nav-link" >
+            Kanbas
+          </Link>
+
+        </li>
+      </ul> */}
+      <Nav />
+    </>
   );
 }
 
