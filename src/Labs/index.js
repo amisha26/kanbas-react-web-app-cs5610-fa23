@@ -4,6 +4,7 @@ import Assignment4 from "./a4";
 import AddRedux from "./a4/ReduxExamples/AddRedux";
 import CounterRedux from "./a4/ReduxExamples/CounterRedux";
 import HelloRedux from "./a4/ReduxExamples/HelloRedux";
+import TodoList from "./a4/ReduxExamples/todos/TodoList";
 //import { Routes, Route, Navigate } from "react-router";
 import store from "./store/index";
 import { Provider } from "react-redux";
@@ -18,6 +19,7 @@ function Labs() {
         <HelloRedux />
         <CounterRedux />
         <AddRedux />
+        <TodoList/>
       </div>
     </Provider>
 
