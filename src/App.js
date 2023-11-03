@@ -1,5 +1,6 @@
 import "./App.css";
-import Labs from "./Labs/a3";
+import Labs from "./Labs";
+
 import Kanbas from "./Kanbas";
 import HelloWorld from "./Labs/a3/HelloWorld";
 import { Routes, Route } from "react-router-dom";
