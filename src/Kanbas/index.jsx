@@ -1,17 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import KanbasNavigation from "./KanbasNavigation";
 import Dashboard from "./Dashboard";
 import Courses from "./Courses";
 // data
-import { courses } from "./Database/index.js";
+//import { courses } from "./Database/index.js";
 import store from "./store";
 import { Provider } from "react-redux";
+import * as client from "./Courses/client";
+
+
 
 const defaultInputState = { inputField: "" };
 
 function Kanbas() {
-  const [course, setCourse] = useState(courses);
+  //const [courses, setCourses] = useState([]);
+  const [course, setCourse] = useState([]);
   const [input, setInput] = useState({});
   const [courseId, setCourseId] = useState();
   const [enableEdit, setEnableEdit] = useState(false);
@@ -24,7 +28,7 @@ function Kanbas() {
   };
 
   // add course handle
-  const handleAddCourse = () => {
+  const handleAddCourse = async () => {
     setCourse((state) => {
       const newCourse = {
         _id: new Date().getTime().toString(),
@@ -36,6 +40,15 @@ function Kanbas() {
 
       return [...state, newCourse];
     });
+
+    await client.addCourse({
+      _id: new Date().getTime().toString(),
+      name: "New Course",
+      number: "New Number",
+      startDate: "2023-09-10",
+      endDate: "2023-12-15",
+    }
+);
 
     setInput(defaultInputState);
   };
@@ -57,7 +70,7 @@ function Kanbas() {
   };
 
   // update course handle
-  const handleUpdate = () => {
+  const handleUpdate = async () => {
     setCourse((state) => {
       const data = state.map((item) => {
         if (item._id === courseId) {
@@ -68,15 +81,26 @@ function Kanbas() {
       });
       return data;
     });
+    await client.updateCourse({...input, _id: courseId});
     setEnableEdit(false);
   };
 
   // delete course handle
-  const handleDelete = (id) => {
+  const handleDelete = async (id) => {
+    await client.deleteCourse(id);
     setCourse((state) => {
       return state.filter((item) => item._id !== id);
     });
   };
+  
+
+  useEffect(() => {
+    const fetchCourses = async () => {
+      const courses = await client.fetchCourses();
+      setCourse(courses);
+    };
+    fetchCourses();
+  }, []);
 
   return (
     <div>
@@ -110,7 +134,7 @@ function Kanbas() {
             />
             <Route
               path="Courses/:courseId/*"
-              element={<Courses courses={courses} />}
+              element={<Courses courses={course} />}
             />
           </Routes>
         </div>

@@ -22,6 +22,7 @@ const Courses = ({ courses }) => {
   const { courseId } = useParams();
   const { pathname } = useLocation();
   const currentPage = pathname.split("/");
+  console.log({courseId, courses})
   const course = courses?.find((course) => course._id === courseId);
 
   /**
@@ -34,7 +35,7 @@ const Courses = ({ courses }) => {
         <p>
           <AiOutlineMenu style={{ color: "rgb(211, 12, 12)" }} />
         </p>
-        <p style={{ color: "rgb(211, 12, 12)" }}>{course.name}</p>
+        <p style={{ color: "rgb(211, 12, 12)" }}>{course?.name}</p>
         <p>
           <AiOutlineRight />
         </p>
