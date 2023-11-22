@@ -8,6 +8,7 @@ import TodoList from "./a4/ReduxExamples/todos/TodoList";
 //import { Routes, Route, Navigate } from "react-router";
 import store from "./store/index";
 import { Provider } from "react-redux";
+import Assignment5 from "./a5"
 
 
 function Labs() {
@@ -15,11 +16,12 @@ function Labs() {
     <Provider store={store}>
         <div className="container">
         <h1>Labs</h1>
-        <Assignment4 />
+        {/* <Assignment4 />
         <HelloRedux />
         <CounterRedux />
         <AddRedux />
-        <TodoList/>
+        <TodoList/> */}
+        <Assignment5 />
       </div>
     </Provider>
 
