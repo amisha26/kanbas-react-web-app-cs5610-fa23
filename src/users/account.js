@@ -19,6 +19,7 @@ function Account() {
     } else {
       fetchAccount();
     }
+  // eslint-disable-next-line
   }, []);
   const save = async () => {
     await client.updateUser(account);

@@ -33,6 +33,7 @@ function UserTable() {
   };
   const updateUser = async () => {
     try {
+      // eslint-disable-next-line
       const status = await client.updateUser(user);
       setUsers(users.map((u) => (u._id === user._id ? user : u)));
     } catch (err) {
