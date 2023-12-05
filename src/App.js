@@ -13,6 +13,7 @@ function App() {
         <Route path="/" element={<SelectOptions />} />
         <Route path="/Labs/*" element={<Labs />} />
         <Route path="/hello" element={<HelloWorld />} />
+        <Route path="/Kanbas" element={<Kanbas />} />
         <Route path="/kanbas/*" element={<Kanbas />} />
       </Routes>
     </div>

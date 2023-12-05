@@ -6,6 +6,12 @@ import { links } from "../Data";
 
 function KanbasNavigation() {
   const { pathname } = useLocation();
+  const getActivator = (pathname) =>
+  pathname.includes("signin") ||
+  pathname.includes("signup") ||
+  pathname.includes("users") ||
+  pathname.includes("account") ||
+  pathname.includes("Account");
   return (
     <div className="nav__main">
       <Link to="/">

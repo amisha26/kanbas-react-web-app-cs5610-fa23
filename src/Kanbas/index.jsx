@@ -3,6 +3,10 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import KanbasNavigation from "./KanbasNavigation";
 import Dashboard from "./Dashboard";
 import Courses from "./Courses";
+import Signin from "./Users/signin";
+import Signup from "./Users/signup";
+import UserTable from "./Users/table";
+import Account from "./Users/account";
 // data
 //import { courses } from "./Database/index.js";
 import store from "./store";
@@ -136,6 +140,10 @@ function Kanbas() {
               path="Courses/:courseId/*"
               element={<Courses courses={course} />}
             />
+            <Route path="/signin" element={<Signin />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/users" element={<UserTable />} />
+            <Route path="/Account/:id" element={<Account />} />
           </Routes>
         </div>
       </Provider>
