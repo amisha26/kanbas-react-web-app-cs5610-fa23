@@ -20,6 +20,7 @@ const Account = () => {
       navigate("/kanbas/signin");
     }
   };
+  // eslint-disable-next-line
   try {
     useEffect(() => {
       if (id) {
