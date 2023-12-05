@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState, useCallback } from "react";
 
 function WorkingWithArrays() {
-  const API = `${process.env.REACT_APP_BASE_URL}/a5/todos`;
+  const API = `${process.env.REACT_APP_BASE_URL_WITH_API}/a5/todos`;
 
   const [todo, setTodo] = useState({
     id: 1,

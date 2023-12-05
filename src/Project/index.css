@@ -1,0 +1,36 @@
+.nav {
+    background-color: #f0f0f0; /* Light gray background */
+    border: 1px solid #070707; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Padding for the navigation bar */
+  }
+  
+  /* Link styles */
+  .nav-link {
+    color: #333; /* Dark gray font color */
+    padding: 10px 15px; /* Padding for links */
+    text-decoration: none;
+  }
+  
+  /* Active link styles */
+  .nav-link.active {
+    background-color: rgb(1, 1, 1); /* Blue background for active link */
+    color: white; /* White font color for active link */
+  }
+  
+  /* Project container styles */
+  .project-container {
+    margin: 20px; /* Margin around the entire container */
+  }
+  
+  /* Navigation column styles */
+  .nav-column {
+    background-color: #010000; /* Light gray background for the navigation column */
+    padding: 20px; /* Padding for the navigation column */
+  }
+  
+  /* Content column styles */
+  .content-column {
+    padding: 20px; /* Padding for the content column */
+  }
+  

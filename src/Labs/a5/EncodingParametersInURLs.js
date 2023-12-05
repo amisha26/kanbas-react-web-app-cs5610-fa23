@@ -9,7 +9,7 @@ function EncodingParametersInURLs() {
   const [errorWelcome, setErrorWelcome] = useState(null);
   const fetchWelcome = async () => {
     try {
-      const response = await axios.get(`${process.env.REACT_APP_BASE_URL}/a5/welcome`);
+      const response = await axios.get(`${process.env.REACT_APP_BASE_URL_WITH_API}/a5/welcome`);
       setWelcome(response.data);
     } catch (error) {
       console.error(error);
@@ -22,7 +22,7 @@ function EncodingParametersInURLs() {
   const [errorSum, setErrorSum] = useState(null);
   const fetchSum = async (a, b) => {
     try {
-      const response = await axios.get(`${process.env.REACT_APP_BASE_URL}/a5/add/${a}/${b}`);
+      const response = await axios.get(`${process.env.REACT_APP_BASE_URL_WITH_API}/a5/add/${a}/${b}`);
       setResult(response.data);
     } catch (error) {
       console.error(error);
@@ -35,7 +35,7 @@ function EncodingParametersInURLs() {
   const fetchSubtraction = async (a, b) => {
     try {
       const response = await axios.get(
-        `${process.env.REACT_APP_BASE_URL}/a5/subtract/${a}/${b}`
+        `${process.env.REACT_APP_BASE_URL_WITH_API}/a5/subtract/${a}/${b}`
       );
       setResult(response.data);
     } catch (error) {
@@ -66,13 +66,13 @@ function EncodingParametersInURLs() {
       />
       <h3>Path Parameters</h3>
       <a
-        href={`${process.env.REACT_APP_BASE_URL}/a5/add/${a}/${b}`}
+        href={`${process.env.REACT_APP_BASE_URL_WITH_API}/a5/add/${a}/${b}`}
         className="btn btn-primary"
       >
         Add {a} + {b}
       </a>
       <a
-        href={`${process.env.REACT_APP_BASE_URL}/a5/subtract/${a}/${b}`}
+        href={`${process.env.REACT_APP_BASE_URL_WITH_API}/a5/subtract/${a}/${b}`}
         className="btn btn-danger"
       >
         Substract {a} - {b}
@@ -99,13 +99,13 @@ function EncodingParametersInURLs() {
 
       <h3>Query Parameters</h3>
       <a
-        href={`${process.env.REACT_APP_BASE_URL}/a5/calculator?operation=add&a=${a}&b=${b}`}
+        href={`${process.env.REACT_APP_BASE_URL_WITH_API}/a5/calculator?operation=add&a=${a}&b=${b}`}
         className="btn btn-primary"
       >
         Add {a} + {b}
       </a>
       <a
-        href={`${process.env.REACT_APP_BASE_URL}/a5/calculator?operation=subtract&a=${a}&b=${b}`}
+        href={`${process.env.REACT_APP_BASE_URL_WITH_API}/a5/calculator?operation=subtract&a=${a}&b=${b}`}
         className="btn btn-danger"
       >
         Substract {a} - {b}
