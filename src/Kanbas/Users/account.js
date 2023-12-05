@@ -28,6 +28,7 @@ const Account = () => {
       } else {
         fetchAccount();
       }
+      // eslint-disable-next-line
     }, []);
   } catch (err) {
     navigate("/kanbas/signin");
