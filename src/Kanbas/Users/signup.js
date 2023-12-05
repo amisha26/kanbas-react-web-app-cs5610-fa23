@@ -44,7 +44,6 @@ const Signup = () => {
     }
   };
   // eslint-disable-next-line
-
   const showErrorMessage = () => {
     setShowError(true);
     setTimeout(() => {
