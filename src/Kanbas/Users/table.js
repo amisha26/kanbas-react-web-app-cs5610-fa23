@@ -101,6 +101,7 @@ const UserTable = () => {
         }, 5000);
         return;
       }
+      // eslint-disable-next-line
       const status = await client.updateUser(user);
       setUsers(users.map((u) => (u._id === user._id ? user : u)));
     } catch (err) {
